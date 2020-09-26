@@ -1,0 +1,129 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+body{
+    font-size: 15px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin:3rem;
+    
+}
+.container{
+    display: flex;
+    justify-content: space-around;
+    color: purple;
+}
+h2{
+    font-size: 40px;
+}
+.c2 p{
+    opacity: 50%;
+    color: black;
+}
+.c4,.c5,.c6{
+    background-color: #E6E6FA; 
+    border-radius: 10px;
+    margin-top: 0.5rem;
+    padding:1rem ;
+
+}
+span{
+    color: gold;
+}
+.c4{
+    margin-right: 2rem;
+}
+.c5{
+    margin-left: 2rem;
+}
+.c6{
+    margin-left: 10rem;
+    width: 20rem;
+}
+.cont2{
+    margin-top: 4rem;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 1rem;
+    margin-left: 8rem;
+}
+.pup{
+    color:#DA70D6 ;
+}
+.c7,.c8 ,.c9{
+    background-color: purple;
+    color: white;
+    padding: 0.5rem;
+    border-radius: 20px;
+    font-size: 14px;
+}
+img{
+    border-radius: 50px;
+    width: 2rem;
+}
+.subc7{
+    display: inline-flex;
+    
+}
+.c8{
+    margin-top: 2rem;
+}
+.c9{
+    margin-top: 4rem;
+}
+.s2{
+    
+}
+.attribution{
+    margin-top: 2rem;
+}
+/*responsiveness*/
+/**tablet screen**/
+@media screen and (max-width: 768px){
+    body{
+        margin: 3rem;
+         ;
+    }
+    .c4,.c5,.c6{
+        background-color: #E6E6FA; 
+        border-radius: 10px;
+        margin-top: 0.5rem;
+        margin-left: 2rem;
+        padding:0.5rem ;
+    
+    }
+    .cont2{
+        margin-top: 4rem;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-gap: 1rem;
+        margin-left: 0rem;
+        padding: 0.5rem;
+    }
+}
+/**mobile screen**/
+@media screen and (max-width: 375px){
+        body {
+            text-align: center;
+        }
+        .container{
+            display: grid;
+            grid-template-columns: 100%;
+            background-image: url(lmages/bg);
+        }
+        .c4,.c5,.c6{
+            margin-top: 2rem;
+            padding: 1rem;
+            width: 100%;
+        }
+        .c6{
+           margin-right: 5rem; 
+        }
+        .cont2{
+            display: grid;
+            grid-template-columns: 100%;
+            margin-left: 0rem;
+            padding: 0.5rem;
+        }
+}
